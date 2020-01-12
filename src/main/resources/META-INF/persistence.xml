@@ -1,0 +1,47 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+  version="2.1">
+
+	<persistence-unit name="LOCAL_PERSISTENCE">
+		<description> Spring Hibernate JPA Configuration Example</description>
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+		 <properties>
+			<!-- Configuring JDBC properties  -->
+			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:bookstore" />
+			<property name="javax.persistence.jdbc.user" value="sa" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			
+			<!-- Hibernate properties -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="show_sql" value="true" />
+			<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.use_sql_comments" value="true" />
+			
+
+  		<!-- Important -->
+
+<property name="hibernate.connection.provider_class"
+          value="org.hibernate.connection.C3P0ConnectionProvider" />
+
+<property name="hibernate.c3p0.max_size" value="10" />
+<property name="hibernate.c3p0.min_size" value="0" />
+<property name="hibernate.c3p0.acquire_increment" value="5" />
+<property name="hibernate.c3p0.idle_test_period" value="60" />
+<property name="hibernate.c3p0.max_statements" value="0" />
+<property name="hibernate.c3p0.timeout" value="100" />        
+
+<!--     <property name="hibernate.dbcp.initialSize" value="8" />
+    <property name="hibernate.dbcp.maxActive" value="20" />
+    <property name="hibernate.dbcp.maxIdle" value="20" />
+    <property name="hibernate.dbcp.minIdle" value="0" /> -->
+    
+		</properties>  
+
+	</persistence-unit>
+</persistence>

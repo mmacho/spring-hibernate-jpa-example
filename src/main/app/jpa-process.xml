@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <spring:beans>
+        <spring:bean id="Process" name="Process" class="com.innovationM.spring.service.Process"/>
+    </spring:beans>
+    <flow name="jpa-processFlow">
+        <poll doc:name="Poll">
+            <fixed-frequency-scheduler frequency="10000"/>
+            <logger level="INFO" doc:name="Logger"/>
+        </poll>
+        <set-payload doc:name="Set Payload" value="#[null]"/>
+        <component doc:name="Java">
+            <spring-object bean="Process"/>
+        </component>
+    </flow>
+</mule>
