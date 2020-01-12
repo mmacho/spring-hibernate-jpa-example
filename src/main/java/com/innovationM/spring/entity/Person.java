@@ -64,4 +64,10 @@ public class Person {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	@Override
+	public String toString() {
+		return String.format("Person [id=%s, firstName=%s, lastName=%s, email=%s]", id, firstName, lastName, email);
+	}
+
 }

@@ -7,6 +7,6 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
     <spring:beans>
         <spring:bean id="Bean" name="Bean" class="com.innovationM.spring.config.AppConfig"/>
-<!--         <spring:import resource="classpath:beans.xml"/>
- -->    </spring:beans>
+        <spring:import resource="classpath:beans.xml"/>
+    </spring:beans>
 </mule>

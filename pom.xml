@@ -186,40 +186,40 @@
 	
 	
 	
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-core</artifactId>
-		<version>5.1.0.Final</version>		
-	</dependency>	
-	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
-	<dependency>
-	    <groupId>org.hibernate</groupId>
-	    <artifactId>hibernate-entitymanager</artifactId>
-		<version>5.1.0.Final</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-aspects</artifactId>
-		<version>4.1.9.RELEASE</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-orm</artifactId>
-		<version>4.1.9.RELEASE</version>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
-	<dependency>
-	    <groupId>org.springframework.data</groupId>
-	    <artifactId>spring-data-jpa</artifactId>
-	    <version>1.9.6.RELEASE</version>
-	</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.1.0.Final</version>		
+		</dependency>	
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-entitymanager</artifactId>
+			<version>5.1.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>4.1.9.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>4.1.9.RELEASE</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-jpa</artifactId>
+		    <version>1.9.6.RELEASE</version>
+		</dependency>
 
         <!-- c3p0 -->
         <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
-            <version>0.9.5.2</version>
+            <version>0.9.5.4</version>
         </dependency>
 	
 		<dependency>
@@ -245,6 +245,14 @@
 		    <version>${mule.version}</version>
 		    <scope>provided</scope>
 		</dependency>
+		
+<!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+<dependency>
+    <groupId>io.projectreactor</groupId>
+    <artifactId>reactor-core</artifactId>
+    <version>3.2.3.RELEASE</version> 
+</dependency> 
+		
     </dependencies>
 
 	<repositories>
