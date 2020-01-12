@@ -189,8 +189,7 @@
 	<dependency>
 		<groupId>org.hibernate</groupId>
 		<artifactId>hibernate-core</artifactId>
-<!-- 		<version>5.3.13.Final</version>
- -->		<version>5.1.0.Final</version>		
+		<version>5.1.0.Final</version>		
 	</dependency>	
 	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
 	<dependency>
@@ -208,6 +207,7 @@
 		<artifactId>spring-orm</artifactId>
 		<version>4.1.9.RELEASE</version>
 	</dependency>
+	
 	<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
 	<dependency>
 	    <groupId>org.springframework.data</groupId>
@@ -222,29 +222,29 @@
             <version>0.9.5.2</version>
         </dependency>
 	
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-c3p0</artifactId>
-    <version>4.1.9.Final</version>
-</dependency>
-
-	<dependency>
-		<groupId>org.apache.commons</groupId>
-		<artifactId>commons-dbcp2</artifactId>
-		<version>2.1.1</version>
-	</dependency>
-	<dependency>
-		<groupId>com.h2database</groupId>
-		<artifactId>h2</artifactId>
-		<version>1.4.197</version>
-		<scope>runtime</scope>
-	</dependency>
-	<dependency>
-	    <groupId>org.mule.modules</groupId>
-	    <artifactId>mule-module-schedulers</artifactId>
-	    <version>${mule.version}</version>
-	    <scope>provided</scope>
-	</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-c3p0</artifactId>
+		    <version>4.1.9.Final</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.197</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.mule.modules</groupId>
+		    <artifactId>mule-module-schedulers</artifactId>
+		    <version>${mule.version}</version>
+		    <scope>provided</scope>
+		</dependency>
     </dependencies>
 
 	<repositories>
